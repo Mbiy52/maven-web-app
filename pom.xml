@@ -21,6 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
+		
 		<sonar.host.url>http:3.238.135.186:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
@@ -30,7 +31,7 @@
 		<properties>
   <sonar.organization>mylandmarktechs</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
+     </properties>
 	</properties>
 
 	<dependencies>
@@ -103,8 +104,7 @@
 	      <name>Landmark Technologies Releases Nexus Repository</name>
 	      <url>http://44.192.81.238:8888/mylandmarktech/repository/boa-release/</url>
 	    </repository>
-	    
-	    <snapshotRepository>
+	    	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
 	      <url>http://44.192.81.238:8888/mylandmarktech/repository/boa-snapshot/</url>
