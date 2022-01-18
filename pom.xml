@@ -33,6 +33,15 @@
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties>
 -->
+	<repositories>
+
+<repository>
+<id>nexus</id>
+<name>Proxy Repo</name>
+<url>http://172.31.20.223.243:8081/repository/td-proxy-repo/</url>
+</repository>
+<repositories> 
+	
 	<dependencies>
 		
 		<dependency>
