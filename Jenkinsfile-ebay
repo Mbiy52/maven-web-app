@@ -34,5 +34,4 @@ def mavenHome=tool name:'maven3.8.4'
       deploy adapters: [tomcat9(credentialsId: 'tomcatcredencials', path: '', url: 'http://54.215.26.58:7777/')], contextPath: null, war: 'target/*.war'
       }
   
-   }
-   
+   }   
