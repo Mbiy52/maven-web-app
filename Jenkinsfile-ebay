@@ -28,11 +28,11 @@ def mavenHome=tool name:'maven3.8.4'
     stage('Approve') {
       timeout(time:8, unit: 'HOURS'){
         input message:'Please verify and approve'
-    }
+      }
   
   stage('8Prod-Deploy') {
       deploy adapters: [tomcat9(credentialsId: 'tomcatcredencials', path: '', url: 'http://54.215.26.58:7777/')], contextPath: null, war: 'target/*.war'
       }
   
-  }
+   }
    
