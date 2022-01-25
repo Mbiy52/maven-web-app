@@ -10,10 +10,11 @@ def mavenHome=tool name:'maven3.8.4'
       stage('codeQuality'){
        sh "${mavenHome}/bin/mvn sonar:sonar"
       }
-      */
+      
       stage('uploadartifacts') {
        sh "${mavenHome}/bin/mvn deploy"
       }
+      */
       stage('deploy-UAT') {
       deploy adapters: [tomcat9(credentialsId: 'tomcatcredencials', path: '', url: 'http://54.215.26.58:7777/')], contextPath: null, war: 'target/*.war'
       }
