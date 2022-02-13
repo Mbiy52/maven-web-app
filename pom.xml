@@ -94,8 +94,7 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-		<!-- provided dependencies -->
+				<!-- provided dependencies -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -158,7 +157,7 @@
 				</configuration>
 			</plugin>
 			
-</plugins>
+ </plugins>
 	</build>
 	
 	
